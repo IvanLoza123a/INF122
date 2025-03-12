@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario INF 122</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <center><h1>FORMULARIO</h1></center>
+<div id="Container"> <form method="post" > 
+    <article class="nombre">
+    Usuario: 
+    <input type="text" 
+    id="usuario" 
+    placeholder="Por Ejemplo Juan" 
+    minlength="5" 
+    maxlength="40">
+    </article>
+</div>
+
+<div>
+    <article>
+    Contraseña: 
+    <input type="password"  
+    id="password"
+    placeholder="Contraseña" 
+    minlength="11"> 
+</article>
+</div>
+<div>
+    <article>
+   <h1>Correo:</h1>
+    <input type="email"
+    id="correo"
+    name="email"
+    placeholder="ejemplo@email.com"
+    >
+</article>
+    </div>
+    <div>
+        <article>
+    <h1>Edad:</h1>
+<input type="text"
+    id="edad"
+    name="edad"
+    placeholder="Edad"
+    min="1"
+    max="30"
+    >
+</article>
+    </div>
+    <div>
+    <article>
+
+<input type="file"
+    name="archivo"
+    accept="image/*"
+    placeholder="xdxdxdxd"
+>
+</article>
+    </div>
+    <div>
+    <article>
+<input type="text"
+id="numero"
+minlength="8"
+maxlength="10"
+  >
+</article>
+    </div> 
+    <button type="button" onclick="alert('Tu Nombre es: ' 
+    + document.getElementById('usuario').value 
+    + '\n Tu contraseña es: ' 
+    + document.getElementById('password').value 
+    + '\n Tu correo es: ' 
+    + document.getElementById('correo').value 
+    + '\n Tu edad es: ' 
+    + document.getElementById('edad').value 
+    + '\n Tu número de Celular es: ' 
+    + document.getElementById('numero').value)">
+    ENVIAR
+</button>
+    
+    
+
+</form>
+</body>
+</html>
